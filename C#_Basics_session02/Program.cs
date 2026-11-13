@@ -1,4 +1,5 @@
-﻿using System.Drawing;
+﻿using System.ComponentModel;
+using System.Drawing;
 using System.Dynamic;
 using System.Numerics;
 using System.Timers;
@@ -35,9 +36,30 @@ namespace C__Basics_session02
             //int pages = "464";
 
             // Compile Error
-            bool check = int.TryParse("464", out int res);
-            Console.WriteLine(res);
+            //bool check = int.TryParse("464", out int res);
+            //Console.WriteLine(res);
             #endregion
+
+            #region Q04
+            //Q04.Write code that divides 10 by 0 inside a try block, catches the exception, prints "Cannot divide by
+            //zero", and then prints "Done" in a finally block.
+
+            try
+            {
+                int y = 0;
+                int x = 10 / y;
+            }
+            catch (DivideByZeroException E)
+            {
+                Console.WriteLine("Can not divide by zero");
+            }
+            finally
+            {
+                Console.WriteLine("Done");
+            }
+            #endregion
+
+
 
         }
 
