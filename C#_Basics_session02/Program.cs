@@ -1,4 +1,7 @@
-﻿namespace C__Basics_session02
+﻿using System.Drawing;
+using System.Dynamic;
+
+namespace C__Basics_session02
 {
     internal class Program
     {
@@ -14,7 +17,16 @@
 
             #endregion
 
+            #region Q02
+            // Q02.Using the Book class above, print the result of calling ToString(),
+            //Equals() (compare book with itself), GetHashCode(), and GetType() on book.
 
+            Console.WriteLine(B.ToString());
+            Console.WriteLine(B.Equals(B));
+            Console.WriteLine(B.GetHashCode());
+            Console.WriteLine(B.GetType());
+
+            #endregion
 
         }
 
