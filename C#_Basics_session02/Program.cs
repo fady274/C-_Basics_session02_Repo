@@ -107,12 +107,26 @@ namespace C__Basics_session02
             //to prove it's now a string.
 
 
-            int pages = 464;
-            string pagesString = pages.ToString();
-            Console.WriteLine($"Type of pagesString: {pagesString.GetType()}");
+            //int pages = 464;
+            //string pagesString = pages.ToString();
+            //Console.WriteLine($"Type of pagesString: {pagesString.GetType()}");
 
             #endregion
 
+
+            #region Q10
+            //Declare int copies = 100;. Box it into an object variable, then unbox it back into
+            //a new int
+            //variable, and print both.
+
+            int copies = 100;
+            object boxedCopies = copies; 
+
+            int unboxedCopies = (int)boxedCopies;
+            Console.WriteLine($"box copies: {boxedCopies}");
+            Console.WriteLine($"Unboxed copies: {unboxedCopies}");
+
+            #endregion
 
         }
 
