@@ -10,6 +10,7 @@ namespace C__Basics_session02
     {
         static void Main(string[] args)
         {
+
             #region Q01
             //Q01.  Create a Book class with a Title (string) and Pages (int). Create a Book object and store it in a
             //variable of type object.Print it.
@@ -59,6 +60,13 @@ namespace C__Basics_session02
             }
             #endregion
 
+            #region Q5
+            ///Declare an int pages = 300; then store it in a double variable
+            ///without using a cast
+
+            int pages = 300;
+            double pagesDouble = pages;
+            #endregion
 
 
         }
